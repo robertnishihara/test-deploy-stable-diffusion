@@ -26,9 +26,3 @@ class StableDiffusionV2:
 
 translator = StableDiffusionV2.bind()
 serve.run(translator)
-resp = requests.post(
-    "http://localhost:8000",
-    json="a photo of an astronaut riding a horse on mars"
-)
-new_image = Image.fromarray(np.array(json.loads(resp.content), dtype='uint8'))
-new_image.save("my_image.png")

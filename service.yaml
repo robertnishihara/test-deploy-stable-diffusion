@@ -1,5 +1,5 @@
 entrypoint: python serve_stable_diffusion.py
 cluster_env: stable-diffusion-deploy:3
 runtime_env:
-  working_dir: https://github.com/robertnishihara/test-deploy-stable-diffusion/refs/heads/main.zip
+  working_dir: https://github.com/robertnishihara/test-deploy-stable-diffusion/zipball/main
 healthcheck_url: "/healthcheck"
