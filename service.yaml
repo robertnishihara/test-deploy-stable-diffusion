@@ -1,0 +1,4 @@
+entrypoint: python serve_stable_diffusion.py
+runtime_env:
+  working_dir: https://github.com/robertnishihara/test-deploy-stable-diffusion/refs/heads/main.zip
+healthcheck_url: "/healthcheck"
