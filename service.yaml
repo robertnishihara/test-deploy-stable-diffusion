@@ -3,3 +3,4 @@ cluster_env: stable-diffusion-deploy:3
 runtime_env:
   working_dir: https://github.com/robertnishihara/test-deploy-stable-diffusion/archive/refs/heads/main.zip
 healthcheck_url: "/healthcheck"
+compute_config: test-one-gpu-compute-config

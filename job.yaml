@@ -1,0 +1,14 @@
+entrypoint: python simple_job.py
+runtime_env:
+  working_dir: https://github.com/robertnishihara/test-deploy-stable-diffusion/archive/refs/heads/main.zip
+  env_vars:
+    JOB_DURATION: '10'
+    JOB_VALUE: '0'
+
+compute_config:
+  cloud_id: anyscale_k8s_gcp_cloud
+  # region: us-west-2
+  head_node_type:
+    name: head
+    instance_type: m5.large
+  # worker_node_types: []
